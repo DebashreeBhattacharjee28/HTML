@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML">
+</head>
+<body>
+    <div>
+<p> Form <strong><font size="6">1040</font></strong> <font size="2">Department of the Treasury&ndash;
+    Internal Revenue Service </font>
+     &ensp;&ensp;&ensp;&#40;99&#41;&#x2223;<font size="6">2018</font>
+    &#x2223; <font size="3">OBM No.1545-0074</font>&#9475;&ensp;&ensp;IRS Use Only&ndash;Do not write or staple in this space</p>
+    <p> <font size="5"> U.S. Individual Income Tax Return</font></p>
+
+ </div>
+ <!-- The above code is for the top part or heading part of the form -->
+ <!-- The code below is for the geting the input related to filing staus of the form. Further radio buttons are used to get the input -->
+
+ <hr noshade  size="3" > 
+     <form>
+        Filing status:
+        
+                <input type="radio" name="filing_status" value="Single" /> Single
+                <input type="radio" name="filing_status" value="Married_Jointly" /> Married Filing Jointly
+                <input type="radio" name="filing_status" value="Married_Separately" /> Married Filing Separately
+                <input type="radio" name="filing_status" value="Head_Household" /> Head of Household
+                <input type="radio" name="filing_status" value="Qualifying_Widower" /> Qualifying widow(er)
+                <input type="text" name="some_value">
+            
+<!-- The code below is for the geting the input related to name of the person filling the form and having Social Security Number. 
+        Further, validations are set to enter the correct number of inputs for SSN -->        
+       
+      <hr>
+      
+          Your First name and initial&ensp;&ensp;&ensp;&#x2503;
+          Last name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+          Your social security Number
+          <br>
+          
+                <input type="text" name="first_name" autofocus>&ensp;&ensp;&ensp;&#x2503;
+                <input type="text" name="second_name" autofocus>&#x2503;
+                <input type="text" name="area_num" size="3" maxlength="3">&#x2503;
+                <input type="text" name="grp_num" size="2" maxlength="2">&#x2503;
+                <input type="text" name="ser_num" size="4" maxlength="4">
+
+        
+          <hr>
+
+                Your standard deduction:&ensp;&ensp;&ensp;
+                
+        
+                
+                        <input type="checkbox" name="Deduct1" value="Dependent"> Someone can claim you as a dependent &ensp;&ensp;
+                        <input type="checkbox" name="Deduct2" value="Born beforeJan2"> You were born before January 2,1954&ensp;&ensp;
+                        <input type="checkbox" name="Deduct3" value="Blind"> You are blind
+                       <!--The code here  takes inputs by the use of check boxes--> 
+                
+                <hr>
+
+<!-- The code below is for the geting the input related to name of the spouse in case of joint returns the form and having Social Security Number. 
+        Further, validations are set to enter the correct number of inputs for SSN -->        
+
+           
+            If joint return,spouse's first name and initial &#x2503;
+            Last name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+            Spouse's social security Number
+            <br>
+            
+                  <input type="text" name="first_name">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+                  <input type="text" name="second_name">&#x2503;
+
+                  <input type="text" name="area_num" size="3" maxlength="3">&#x2503;
+                  <input type="text" name="grp_num" size="2" maxlength="2">&#x2503;
+                  <input type="text" name="ser_num" size="4" maxlength="4">
+  
+            
+        
+
+<hr><!--This code is for Standard Deduction of Spouse. Further the input is taken using check boxes-->
+
+        Spouse standard deduction:
+        
+
+        
+                <input type="checkbox" name="Deduct1" value="Claim_Dependent"> Someone can claim your spouse as a dependent &ensp; 
+            
+                <input type="checkbox" name="Deduct2" value="Born beforeJan2"> Spouse  was born before January 2,1954
+                &#x2503;<input type="checkbox" name="Deduct2" value="Health_coverage">Full -year health care coverage or exempt &#40;see inst.&#41; <br>
+                <input type="checkbox" name="Deduct3" value="Blind"> Spouse is blind&ensp;
+                <input type="checkbox" name="Deduct3" value="Dualstatusalien"> Spouse itemizes on a separate return or you were dual-status allie
+        <hr>
+<!--This code is for addition of home address -->
+
+Home address&#40;number and street&#41;.If you have a P.O. box,see instruction&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+Apt&#x2024;no&#x2024;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+Presidential Election Campaign &#40;see inst&#x2024;&#41;
+<form action="" method="post">
+        <input type="text" name="address" size=70>&ensp;&ensp;&ensp;&ensp;&#x2503;
+
+           
+        <input type="text" name="AptNum">&#x2503;
+
+    
+        <input type="checkbox" name="You" value="You1"> You&ensp;
+        <input type="checkbox" name="Spouse" value="Spouse"> Spouse&ensp;
+        
+     <!--This code is for addition of further address elements.validation is done for zip code  -->
+   
+    
+        
+        
+        
+        <hr>
+        City,town or post office,state, and ZIP code&#x2024;If you have a foreign address,attach Schedule 6&#x2024;
+        &ensp;&ensp;&ensp;&#x2503;
+        If more than four dependent,see inst. and &#10004; here &#9658;<input type="checkbox" name="More4" value="ok">
+         &ensp;
+        
+         <input type="text" name="Address" size="70" >&ensp;
+                 <input type="text" name="Statezip" size="5" maxlength= "5">&ensp;
+                
+         <hr>
+         <!--This part of the code enters the dependent information  with validations on the SSN number of Dependents-->
+         <strong>Dependents</strong> &#40;see instructions&#41;&#x3A;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+         <strong>&#40;2&#41;</strong>Social security Number&ensp;&ensp;&ensp;&ensp; &#x2503;<strong>&#40;3&#41;</strong>Relationship to you&ensp;&#x2503; &ensp;&ensp;&ensp;<strong>&#40;4&#41;</strong>&#10004;if qualifies for&#40;see inst&#x2024;&#41;&#x3A;
+
+         <br><strong>&#40;1&#41;</strong>
+         First Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp; 
+         Last Name &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+         &ensp;&ensp;&ensp;&ensp;Child tax credit &ensp;&ensp;&ensp;&ensp; Credit for other dependents<br>
+         <hr>
+         <input type="text" name="Name3" size="61" maxlength="60">&#x2503;
+         <input type="text" name="area_num3" size="3" maxlength="3">&#x2503;
+         <input type="text" name="grp_num3" size="2" maxlength="2">&#x2503;
+         <input type="text" name="ser_num3" size="4" maxlength="4">&#x2503;
+         <input type="text" name="Relation1" size="16" >&#x2503;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="checkbox" name="Chk1" value="Chk1"> 
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         <input type="checkbox" name="Chk2" value="Chk2">&ensp;&ensp;&ensp;
+         <hr>
+         <input type="text" name="Name4" size="61" maxlength="60">&#x2503;
+         <input type="text" name="area_num4" size="3" maxlength="3">&#x2503;
+         <input type="text" name="grp_num4" size="2" maxlength="2">&#x2503;
+         <input type="text" name="ser_num4" size="4" maxlength="4">&#x2503;
+         <input type="text" name="Relation2" size="16" >&#x2503;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="checkbox" name="Chk3" value="Chk3"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         <input type="checkbox" name="Chk4" value="Chk4">&ensp;&ensp;&ensp;
+         <hr>
+         <input type="text" name="Name5" size="61" maxlength="60">&#x2503;
+         <input type="text" name="area_num5" size="3" maxlength="3">&#x2503;
+         <input type="text" name="grp_num5" size="2" maxlength="2">&#x2503;
+         <input type="text" name="ser_num5" size="4" maxlength="4">&#x2503;
+         <input type="text" name="Relation3" size="16" >&#x2503;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="checkbox" name="Chk5" value="Chk5"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         <input type="checkbox" name="Chk6" value="Chk6">&ensp;&ensp;&ensp;
+         <hr>
+         <input type="text" name="Name6" size="61" maxlength="60">&#x2503;
+         <input type="text" name="area_num6" size="3" maxlength="3">&#x2503;
+         <input type="text" name="grp_num6" size="2" maxlength="2">&#x2503;
+         <input type="text" name="ser_num6" size="4" maxlength="4">&#x2503;
+         <input type="text" name="Relation4" size="16">&#x2503;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="checkbox" name="Chk7" value="Chk7"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         <input type="checkbox" name="Chk8" value="Chk8">&ensp;&ensp;&ensp;
+         <hr>
+
+
+         <!-- The  HTML code below is for the Sign Here part of the form  with validation for IRS-->
+         <strong>Sign</strong> &ensp;&ensp;&ensp; Under penalties of perjury,I declare that I have examined this return and accompanying schedules and statements, and to the best of my knowledge and belief, they are true,correct, and complete.
+         <br><strong>Here</strong>&ensp;&ensp;&ensp; Declaration of preparer (other than taxpayer) is based on all information of which preparer has any knowledge.
+         <br>Joint return?&ensp;&ensp;&ensp;Your signature &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;Date &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;Your Occupation&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;If the IRS sent you an Identity Protection PIN,enter it here &#40;see inst&#x2024;&#41;
+         <br>See instructions&#x2024;&#x25BA;
+         <input type="text" name="Signature" size="54" maxlength="20">&#x2503;
+         <input type="date" name="Date">&#x2503;
+         
+         <input type="text" name="Occupation" size="16" maxlength="16">&#x2503;
+         <input type="text" name="IRS_1"  size= "1" maxlength="1">
+         <input type="text" name="IRS_2"  size= "1" maxlength="1">
+         <input type="text" name="IRS_3"  size= "1" maxlength="1">
+         <input type="text" name="IRS_4"  size= "1" maxlength="1">
+         <input type="text" name="IRS_5"  size= "1" maxlength="1">
+         <input type="text" name="IRS_6"  size= "1" maxlength="1">
+
+
+         <br> Keep a copy for &ensp;&ensp;Spouse&#x27;s signature&#x2E;If a joint return&#x2C; &ensp;both must sign&#x2E;
+         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;Date &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+         &ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;Spouse&#39;s Occupation&ensp;&ensp;&#x2503;
+         If the IRS sent you an Identity Protection PIN,enter it here &#40;see inst&#x2024;&#41;
+         <br> your own records&#x2E; <input type="text" name="S_Signature" size="54" maxlength="20">&#x2503;
+         <!-- The  HTML code below is for the Sign Here part of the form for Spouse with validation for IRS-->
+         <input type="date" name="S_Date">&#x2503;
+         <input type="text" name="S_Occupation" size="16" maxlength="16">&#x2503;
+         <input type="text" name="SIRS_1"  size= "1" maxlength="1">
+         <input type="text" name="SIRS_2"  size= "1" maxlength="1">
+         <input type="text" name="SIRS_3"  size= "1" maxlength="1">
+         <input type="text" name="SIRS_4"  size= "1" maxlength="1">
+         <input type="text" name="SIRS_5"  size= "1" maxlength="1">
+         <input type="text" name="SIRS_6"  size= "1" maxlength="1">
+
+         
+         <hr>
+         
+         
+         
+         <!-- The  HTML code below is for the Paid Preparer Use Only  part of the form  with validation for PTIN and Firm's EIN-->
+         <strong>Paid</strong>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Preparer&#x27;s name&ensp; &ensp;&ensp;&ensp;
+          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          &ensp;&#x2503;
+         Preparer&#x27;s signature&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;
+          &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#x2503;
+         PTIN&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&#x2503;Firm&#39;s EIN &ensp;&ensp;&ensp;&ensp;&ensp;
+         &ensp;&ensp;&#x2503; &ensp;&ensp;&ensp;&ensp;&ensp;Check if &#x3A;
+         <br> <strong>Preparer</strong>&ensp;&ensp;&ensp;<input type="text" name="Prep_Name" size="37">&#x2503;
+
+
+         <input type="text" name="Prep_Sig" size="50" >&#x2503;
+         <input type="number" name="PTIN"  min="000000000" max="999999999">&#x2503;
+         <input type="text" name="FEIN_1"  size="2"  maxlength="2">
+         <input type="text" name="FEIN_2"  size="7"  maxlength="7">&#x2503;
+
+         <input type="checkbox" name="Chk9" value="Chk9">3rd Party Designee
+         <input type="checkbox" name="Chk10" value="Chk10">Self Employed
+         <!-- The  HTML code below is for the User Only  part of the form  with validation for phone number-->
+         <hr>
+         <strong>User Only</strong>&ensp; &ensp;Firm&#39;s name&#x25B6;<input type="text" name="Fname" size="80" >&#x2503;
+         Phone no&#x2E;
+         <input type="number" name="PHNO"  min="00000000000" max="9999999999">
+         <hr>
+         &ensp; &ensp;Firm&#39;s address&ensp;&ensp;
+         <input type="text" name="Faddress" size="150" >
+         <hr>
+        
+        
+         <p><strong>For Disclosure&#x2C;Privacy Act&#x2C; and Paperwork Reduction Act Notice&#x2C;&ensp;see separate instructions&#x2E;</strong>&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp; Cat.No.11320B&ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;  &ensp;Form  <strong><font size="5">1040</font></strong>(2018)</p>
+<!-- The above code is for the bottom part of the form -->
+
+<div style="text-align:center">  
+        <input type="submit" />  
+    </div>  
+    <!-- Lastly a submit button is added to the code -->
+
+
+
+
+         
+
+
+        
+
+      
+   </form>   
+
+</body>
+
+
+
+
+</html>
