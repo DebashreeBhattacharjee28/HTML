@@ -17,7 +17,7 @@ by making two HTML forms.
 ## How to run :
 * STEPS :
 1. Open a git bash shell
-2. Execute a command "git clone 
+2. Execute a command "git clone https://github.com/DebashreeBhattacharjee28/HTML.git
 3. Get the files Form2.html and assignment1.html.
 4. Open files on any browser like Google Chrome or Mozila to view the contents 
 5. Enter the data in the two forms to see how it is working.
