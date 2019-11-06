@@ -1,5 +1,5 @@
-# INFO 6150 :Web Design and user experience :
-## Assignment 1 : 
+
+## Project Title
 * Implementation of HTML Form titled U.S Individual Income Tax Return
 
 ## Project Description :
@@ -17,7 +17,7 @@ by making two HTML forms.
 ## How to run :
 * STEPS :
 1. Open a git bash shell
-2. Execute a command "git clone https://github.com/neu-mis-info6150-spring-2019/assignment-1-DebashreeBhattacharjee28"
+2. Execute a command "git clone 
 3. Get the files Form2.html and assignment1.html.
 4. Open files on any browser like Google Chrome or Mozila to view the contents 
 5. Enter the data in the two forms to see how it is working.
